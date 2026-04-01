@@ -65,6 +65,13 @@ tr:hover td{background:#fafaf7}
 </style>
 </head>
 <body>
+
+<div id="sync-bar" style="background:#e8f0fe;border-bottom:1px solid #aac4f5;padding:6px 16px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:11px;margin-bottom:10px;">
+  <span style="font-weight:700;color:#1a56c4;white-space:nowrap">GOOGLE SYNC</span>
+  <button onclick="pushToGoogle()" style="background:#1a56c4;color:white;border:none;border-radius:4px;padding:5px 12px;font-size:11px;font-weight:700;cursor:pointer;">Push to Google</button>
+  <button onclick="pullFromGoogle()" style="background:#2e7d32;color:white;border:none;border-radius:4px;padding:5px 12px;font-size:11px;font-weight:700;cursor:pointer;">Pull from Google</button>
+  <span id="sync-status" style="font-size:11px;font-weight:600;font-family:monospace;"></span>
+</div>
 <h1>Freezer Inventory</h1>
 <div class="toolbar">
   <input type="text" id="srch" placeholder="Search…" oninput="render()">
@@ -2403,6 +2410,50 @@ function dl(){
   const a=document.createElement("a");
   a.href=URL.createObjectURL(new Blob([src],{type:"text/html"}));
   a.download="freezer_inventory.html";a.click();
+}
+
+
+// JSONBIN SYNC
+var JBIN_URL = "https://api.jsonbin.io/v3/b/69cc9d32aaba882197b2c2bc";
+var JBIN_KEY = "$2a$10$tpjsSaIqmjzoWXjpvpu7n.AdJJdQf8JUbDhBDfNoCC5rzN0vxDh/m";
+
+function setSyncStatus(msg, cls) {
+  var el = document.getElementById('sync-status');
+  if(el) { el.textContent = msg; el.style.color = cls==='sync-ok'?'#2e7d32':cls==='sync-err'?'#c04a2a':'#b07d20'; }
+}
+
+function pushToGoogle() {
+  var state = {items:items, meal:meal, mealLoc:mealLoc, collapsed:collapsed, nid:nid, nmid:nmid};
+  setSyncStatus('Saving...', 'sync-pending');
+  fetch(JBIN_URL, {
+    method: 'PUT',
+    headers: {'Content-Type':'application/json','X-Master-Key':JBIN_KEY,'X-Bin-Versioning':'false'},
+    body: JSON.stringify(state)
+  })
+  .then(function(r){ return r.json(); })
+  .then(function(){ setSyncStatus('Saved ' + new Date().toLocaleTimeString(), 'sync-ok'); })
+  .catch(function(){ setSyncStatus('Save failed', 'sync-err'); });
+}
+
+function pullFromGoogle() {
+  setSyncStatus('Loading...', 'sync-pending');
+  fetch(JBIN_URL + '/latest', {
+    method: 'GET',
+    headers: {'X-Master-Key':JBIN_KEY}
+  })
+  .then(function(r){ return r.json(); })
+  .then(function(resp){
+    var d = resp.record;
+    if(d && d.items){
+      items=d.items; meal=d.meal||defaultMeal; mealLoc=d.mealLoc||'Right bin';
+      collapsed=d.collapsed||{}; nid=d.nid||300; nmid=d.nmid||50;
+      save(); render();
+      setSyncStatus('Loaded ' + new Date().toLocaleTimeString(), 'sync-ok');
+    } else {
+      setSyncStatus('Nothing saved yet', 'sync-err');
+    }
+  })
+  .catch(function(){ setSyncStatus('Could not connect', 'sync-err'); });
 }
 
 document.getElementById("modal").addEventListener("click",function(e){if(e.target===this)closeModal();});
