@@ -1,13 +1,13 @@
+<!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Freezer Inventory</title>
-<link rel="icon" type="image/png" href="data:image/png;base64,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">
-<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAMrUlEQVR4nO2dfXAU5R3Hv7t3l0sCSYBA5J2AVoIoUAbEd7FopAxqUWwLKlN10BE72Bm105Y6zjitilWrM2qnrdYhKGMFteNojaKgaIEBK6Io4UUTTBEEBEki5HIv2z82d3m7l927vdvd334/M5nJ7e3d83t2P/vsb/d59jlF0zQNhAhBtTsAQqyEQhNRUGgiCgpNREGhiSgoNBEFhSaioNBEFBSaiIJCE1FQaCIKCk1EQaGJKCg0EQWFJqKg0EQUFJqIgkITUVBoIgoKTURBoYkoKDQRBYUmoqDQRBQUmoiCQhNRUGgiCr/dAUhn1qoTfZa9s7DUhki8AVvoPJJM5nTLSe5Q6DyRSVpKnR8odB4wKiulth4KbTFmJaXU1kKhiSgoNBEFhSaioNBEFBTaYsx2mrCTxVoodB4wKillth7Fiz/rVqju6HS35ApVntcOGs+10IXsjk4l09a6NZaXxW52HU+10EZ2rtUtWvnsuqTLW+oXWVaGHfVyKp5poaV2R0utV7Z4Qmip3dFS65ULnhCaeAcKTURBoYkoKDQRhSeENnvLKh/3ifOB2Ti9cOvOE0IDxndmXJJU94+dQjw+o1J7QWbAQ0IDmXdqbzmcKnXvuDJJ7RWZAY8JDZjvjnaa1KniSRW/l2QGPNb1nYl08mbbVW1l13c+4pOG51rodKSTwu6WmjIbg0L3wolSU2bjUOgkOElqymwOCp0CJ0hNmc1DodNgp9SUOTsodAbskJoyZw+FNoAhpabMuUGhDVIIqSlz7lBoE+RTaspsDRTaJPmQmjJbB4XOAiulpszWQqGzxAqpKbP1UOgcyAWpKbP1UGgcyAWpKbP1UGgcyAWpKbP1UGgcyAWpKbP1UGgcyAWpKbP1UGgcyAWpKbP1UGgcyAWpKbP1UGgcyAWpKbP1UGgcyAWpKbP1">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAMrUlEQVR4nO2dfXAU5R3Hv7t3l0sCSYBA5J2AVoIoUAbEd7FopAxqUWwLKlN10BE72Bm105Y6zjitilWrM2qnrdYhKGMFteNojaKgaIEBK6Io4UUTTBEEBEki5HIv2z82d3m7l927vdvd334/M5nJ7e3d83t2P/vsb/d59jlF0zQNhAhBtTsAQqyEQhNRUGgiCgpNREGhiSgoNBEFhSaioNBEFBSaiIJCE1FQaCIKCk1EQaGJKCg0EQWFJqKg0EQUFJqIgkITUVBoIgoKTURBoYkoKDQRBYUmoqDQRBQUmoiCQhNRUGgiCr/dAUhn1qoTfZa9s7DUhki8AVvoPJJM5nTLSe5Q6DyRSVpKnR8odB4wKiulth4KbTFmJaXU1kKhiSgoNBEFhSaioNBEFBTaYsx2mrCTxVoodB4wKillth7Fiz/rVqju6HS35ApVntcOGs+10IXsjk4l09a6NZaXxW52HU+10EZ2rtUtWvnsuqTLW+oXWVaGHfVyKp5poaV2R0utV7Z4Qmip3dFS65ULnhCaeAcKTURBoYkoKDQRhSeENnvLKh/3ifOB2Ti9cOvOE0IDxndmXJJU94+dQjw+o1J7QWbAQ0IDmXdqbzmcKnXvuDJJ7RWZAY8JDZjvjnaa1KniSRW/l2QGPNb1nYl08mbbVW1l13c+4pOG51rodKSTwu6WmjIbg0L3wolSU2bjUOgkOElqymwOCp0CJ0hNmc1DodNgp9SUOTsodAbskJoyZw+FNoAhpabMuUGhDVIIqSlz7lBoE+RTaspsDRTaJPmQmjJbB4XOAiulpszWQqGzxAqpKbP1UOgcyAWpKbP1UGgcyAWpKbP1UGgcyAWpKbP1UGgcyAWpKbP1UGgcyAWpKbP1UGgcyAWpKbP1UGgcyAWpKbP1UGgcyAWpKbP1UGgcyAWpKbP1">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Freezer Inventory">
-<text y='.9em' font-size='90'>🧊</text></svg>">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:system-ui,sans-serif;font-size:13px;background:#f4f4f1;color:#1a1a1a;padding:10px;text-transform:uppercase}
@@ -25,8 +25,14 @@ button.sm{padding:2px 7px;font-size:11px}
 button.icon{padding:2px 7px;font-size:12px;border:1px solid #ddd;background:#fff}
 button.icon:hover{background:#eee}
 .section{margin-bottom:14px}
-.sec-head{display:flex;align-items:center;gap:8px;padding:5px 10px;background:#deded8;border-radius:6px 6px 0 0;font-weight:500;font-size:12px;cursor:pointer;user-select:none}
+.sec-head{display:flex;align-items:center;gap:8px;padding:5px 10px;background:#deded8;border-radius:6px 6px 0 0;font-weight:500;font-size:12px;user-select:none}
 .sec-head .arr{font-size:10px;margin-left:auto}
+.sec-head-btns{display:flex;gap:4px;margin-left:8px}
+.sec-head-btn{padding:1px 6px;font-size:10px;border:1px solid #bbb;border-radius:3px;background:#f0f0ec;cursor:pointer;text-transform:uppercase;font-weight:600}
+.sec-head-btn:hover{background:#e0e0da}
+.sec-head-btn.del{border-color:#e8a0a0;color:#c00;background:#fff0f0}
+.sec-head-btn.del:hover{background:#ffe0e0}
+.sec-toggle{cursor:pointer;flex:1}
 table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #ddd;border-top:none;table-layout:fixed}
 th{background:#efefeb;font-weight:500;font-size:11px;padding:5px 6px;text-align:left;border-bottom:1px solid #ddd}
 td{padding:4px 6px;border-bottom:1px solid #f2f2f0;vertical-align:middle;font-size:12px;overflow:hidden}
@@ -62,16 +68,19 @@ tr:hover td{background:#fafaf7}
 .calc-box{background:#f0f4ff;border:1px solid #b0c4f0;border-radius:5px;padding:7px;margin-top:5px;font-size:11px}
 .calc-box input{width:72px;padding:2px 4px;border:1px solid #ccc;border-radius:3px;font-size:11px;margin:0 3px}
 .save-indicator{font-size:11px;color:#388e3c;margin-left:auto}
+.add-section-bar{display:flex;gap:6px;align-items:center;margin-bottom:12px;flex-wrap:wrap}
+.add-section-bar input{padding:5px 9px;border:1px solid #ccc;border-radius:5px;font-size:12px;width:200px}
 </style>
 </head>
 <body>
 
 <div id="sync-bar" style="background:#e8f0fe;border-bottom:1px solid #aac4f5;padding:6px 16px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:11px;margin-bottom:10px;">
-  <span style="font-weight:700;color:#1a56c4;white-space:nowrap">GOOGLE SYNC</span>
-  <button onclick="pushToGoogle()" style="background:#1a56c4;color:white;border:none;border-radius:4px;padding:5px 12px;font-size:11px;font-weight:700;cursor:pointer;">Push to Google</button>
-  <button onclick="pullFromGoogle()" style="background:#2e7d32;color:white;border:none;border-radius:4px;padding:5px 12px;font-size:11px;font-weight:700;cursor:pointer;">Pull from Google</button>
+  <span style="font-weight:700;color:#1a56c4;white-space:nowrap">JSONBIN SYNC</span>
+  <button onclick="pushToGoogle()" style="background:#1a56c4;color:white;border:none;border-radius:4px;padding:5px 12px;font-size:11px;font-weight:700;cursor:pointer;">Push</button>
+  <button onclick="pullFromGoogle()" style="background:#2e7d32;color:white;border:none;border-radius:4px;padding:5px 12px;font-size:11px;font-weight:700;cursor:pointer;">Pull</button>
   <span id="sync-status" style="font-size:11px;font-weight:600;font-family:monospace;"></span>
 </div>
+
 <h1>Freezer Inventory</h1>
 <div class="toolbar">
   <input type="text" id="srch" placeholder="Search…" oninput="render()">
@@ -92,1892 +101,29 @@ tr:hover td{background:#fafaf7}
     <button class="meal-loc-btn" onclick="editMealLoc()" id="mealLocBtn">📍 Right bin</button>
     <button class="sm danger" onclick="clearMealBag()" style="margin-left:auto">🗑 Clear all — new week</button>
   </div>
-  <div class="meal-grid" id="mealGrid">
-    <div class="meal-item">
-      <span class="meal-item-name">Carnitas</span>
-      <button class="icon" style="font-size:11px;padding:1px 6px" title="Put 1 back to main" onclick="mealPutBack(1)">+</button>
-      <span class="meal-item-qty">1</span>
-      <span class="meal-item-unit">svgs</span>
-      <button class="icon" style="font-size:11px;padding:1px 6px" title="Ate 1 serving" onclick="mealEat(1)">−</button>
-      <button title="Cancel — put all back to main" onclick="mealCancel(1)" style="background:none;border:1px solid #f0a0a0;border-radius:4px;cursor:pointer;color:#c00;font-size:11px;padding:1px 5px">✕</button>
-      <button title="Done/eaten — clear without affecting main" onclick="mealClear(1)" style="background:none;border:1px solid #ccc;border-radius:4px;cursor:pointer;color:#666;font-size:11px;padding:1px 5px">🗑</button>
-    </div>
-    <div class="meal-item">
-      <span class="meal-item-name">Bread</span>
-      <button class="icon" style="font-size:11px;padding:1px 6px" title="Put 1 back to main" onclick="mealPutBack(2)">+</button>
-      <span class="meal-item-qty">1</span>
-      <span class="meal-item-unit">slices</span>
-      <button class="icon" style="font-size:11px;padding:1px 6px" title="Ate 1 serving" onclick="mealEat(2)">−</button>
-      <button title="Cancel — put all back to main" onclick="mealCancel(2)" style="background:none;border:1px solid #f0a0a0;border-radius:4px;cursor:pointer;color:#c00;font-size:11px;padding:1px 5px">✕</button>
-      <button title="Done/eaten — clear without affecting main" onclick="mealClear(2)" style="background:none;border:1px solid #ccc;border-radius:4px;cursor:pointer;color:#666;font-size:11px;padding:1px 5px">🗑</button>
-    </div>
-    <div class="meal-item">
-      <span class="meal-item-name">Shredded chicken</span>
-      <button class="icon" style="font-size:11px;padding:1px 6px" title="Put 1 back to main" onclick="mealPutBack(3)">+</button>
-      <span class="meal-item-qty">1</span>
-      <span class="meal-item-unit">svgs</span>
-      <button class="icon" style="font-size:11px;padding:1px 6px" title="Ate 1 serving" onclick="mealEat(3)">−</button>
-      <button title="Cancel — put all back to main" onclick="mealCancel(3)" style="background:none;border:1px solid #f0a0a0;border-radius:4px;cursor:pointer;color:#c00;font-size:11px;padding:1px 5px">✕</button>
-      <button title="Done/eaten — clear without affecting main" onclick="mealClear(3)" style="background:none;border:1px solid #ccc;border-radius:4px;cursor:pointer;color:#666;font-size:11px;padding:1px 5px">🗑</button>
-    </div>
-    <div class="meal-item">
-      <span class="meal-item-name">Tamales</span>
-      <button class="icon" style="font-size:11px;padding:1px 6px" title="Put 1 back to main" onclick="mealPutBack(4)">+</button>
-      <span class="meal-item-qty">1</span>
-      <span class="meal-item-unit">svgs</span>
-      <button class="icon" style="font-size:11px;padding:1px 6px" title="Ate 1 serving" onclick="mealEat(4)">−</button>
-      <button title="Cancel — put all back to main" onclick="mealCancel(4)" style="background:none;border:1px solid #f0a0a0;border-radius:4px;cursor:pointer;color:#c00;font-size:11px;padding:1px 5px">✕</button>
-      <button title="Done/eaten — clear without affecting main" onclick="mealClear(4)" style="background:none;border:1px solid #ccc;border-radius:4px;cursor:pointer;color:#666;font-size:11px;padding:1px 5px">🗑</button>
-    </div>
-    <div class="meal-item">
-      <span class="meal-item-name">Salmon, cooked 3-oz portions</span>
-      <button class="icon" style="font-size:11px;padding:1px 6px" title="Put 1 back to main" onclick="mealPutBack(5)">+</button>
-      <span class="meal-item-qty">1</span>
-      <span class="meal-item-unit">svgs</span>
-      <button class="icon" style="font-size:11px;padding:1px 6px" title="Ate 1 serving" onclick="mealEat(5)">−</button>
-      <button title="Cancel — put all back to main" onclick="mealCancel(5)" style="background:none;border:1px solid #f0a0a0;border-radius:4px;cursor:pointer;color:#c00;font-size:11px;padding:1px 5px">✕</button>
-      <button title="Done/eaten — clear without affecting main" onclick="mealClear(5)" style="background:none;border:1px solid #ccc;border-radius:4px;cursor:pointer;color:#666;font-size:11px;padding:1px 5px">🗑</button>
-    </div>
-    <div class="meal-item">
-      <span class="meal-item-name">Rice</span>
-      <button class="icon" style="font-size:11px;padding:1px 6px" title="Put 1 back to main" onclick="mealPutBack(6)">+</button>
-      <span class="meal-item-qty">1</span>
-      <span class="meal-item-unit">svgs</span>
-      <button class="icon" style="font-size:11px;padding:1px 6px" title="Ate 1 serving" onclick="mealEat(6)">−</button>
-      <button title="Cancel — put all back to main" onclick="mealCancel(6)" style="background:none;border:1px solid #f0a0a0;border-radius:4px;cursor:pointer;color:#c00;font-size:11px;padding:1px 5px">✕</button>
-      <button title="Done/eaten — clear without affecting main" onclick="mealClear(6)" style="background:none;border:1px solid #ccc;border-radius:4px;cursor:pointer;color:#666;font-size:11px;padding:1px 5px">🗑</button>
-    </div></div>
+  <div class="meal-grid" id="mealGrid"></div>
   <div class="legend">− = ate 1 svg &nbsp;|&nbsp; + = put 1 back to main &nbsp;|&nbsp; ✕ = cancel item (all back to main) &nbsp;|&nbsp; 🗑 = done/eaten (clears without affecting main)</div>
   <div class="undo-bar" id="undoBar"></div>
   <div style="display:flex;gap:5px;align-items:center;margin-top:8px;flex-wrap:wrap">
-    <select id="mealSel" style="font-size:12px;padding:4px 7px;border:1px solid #ccc;border-radius:4px"><option value="">Select item to add…</option><option value="Bone broth – nutritional yeast">Bone broth – nutritional yeast (1 svgs)</option><option value="Bone broth – crockpot">Bone broth – crockpot (5 svgs)</option><option value="Cottage cheese / 4 oz for bone broth">Cottage cheese / 4 oz for bone broth (0 svgs)</option><option value="Yogurt / 4 oz for bone broth">Yogurt / 4 oz for bone broth (0 svgs)</option><option value="Cream cheese">Cream cheese (1 4-oz pkg)</option><option value="Chicken noodle soup">Chicken noodle soup (10 svgs)</option><option value="Chuck wagon stew">Chuck wagon stew (2 svgs)</option><option value="Meat sauce">Meat sauce (18 svgs)</option><option value="Miso soup">Miso soup (9 svgs)</option><option value="Enchilada sauce">Enchilada sauce (5 svgs)</option><option value="Cherry chipotle salmon sauce">Cherry chipotle salmon sauce (1 recipe)</option><option value="Chicken tortilla soup">Chicken tortilla soup</option><option value="Chili stew">Chili stew</option><option value="Posole">Posole</option><option value="Barbacoa">Barbacoa (2 svgs)</option><option value="Ground beef">Ground beef</option><option value="Beef stroganoff">Beef stroganoff</option><option value="Chuck roast">Chuck roast</option><option value="Steak">Steak</option><option value="Carnitas">Carnitas (0 svgs)</option><option value="Tamales">Tamales (2 svgs)</option><option value="Fried chicken">Fried chicken (7 svgs)</option><option value="Raw chicken breast">Raw chicken breast</option><option value="Shredded chicken">Shredded chicken (8 svgs)</option><option value="Ground chicken">Ground chicken</option><option value="Ground turkey">Ground turkey</option><option value="Salmon filets (lbs)">Salmon filets (lbs) (2 lbs)</option><option value="Salmon, cooked 3-oz portions">Salmon, cooked 3-oz portions (0 svgs)</option><option value="Cheddar">Cheddar (728 g)</option><option value="Gouda">Gouda</option><option value="Mozzarella">Mozzarella</option><option value="Parmigiano Reggiano">Parmigiano Reggiano</option><option value="BUTTERMILK">BUTTERMILK (20 OZ)</option><option value="HEAVY CREAM">HEAVY CREAM (9 TBSP)</option><option value="WHOLE MILK">WHOLE MILK (357 G)</option><option value="MILK &amp; SWEET CREAMER">MILK &amp; SWEET CREAMER (540 G)</option><option value="OAT MILK">OAT MILK (276 G)</option><option value="OAT MILK &amp; SWEET CREAMER">OAT MILK &amp; SWEET CREAMER (951 G)</option><option value="Black beans">Black beans (5 svgs)</option><option value="Quinoa">Quinoa (3 svgs)</option><option value="Refried beans">Refried beans (14 svgs)</option><option value="Rice">Rice (4.5 svgs)</option><option value="Bagels">Bagels</option><option value="Bread">Bread (5 slices)</option><option value="Blueberries">Blueberries (19 svgs)</option><option value="Breakfast mushrooms (enoki/oyster)">Breakfast mushrooms (enoki/oyster) (2 4-day packs)</option><option value="Breakfast veggies">Breakfast veggies (3 4-day packs)</option><option value="Daikon radish">Daikon radish (2 4-day packs)</option><option value="Garlic">Garlic</option><option value="Ginger">Ginger (2 4-day packs)</option><option value="Lunch veggies">Lunch veggies (3 4-day packs)</option><option value="Black olives">Black olives (8 svgs)</option><option value="Frozen pizza">Frozen pizza (1 )</option><option value="Mushrooms, baby bella">Mushrooms, baby bella (9 svgs)</option><option value="Panko crumbs">Panko crumbs</option><option value="Pepperoni">Pepperoni (6 svgs)</option><option value="Pizza crust">Pizza crust (2 )</option><option value="Pizza sauce">Pizza sauce (6 svgs)</option><option value="Tortillas, large">Tortillas, large (5 )</option><option value="Tortillas, small">Tortillas, small (1 )</option><option value="Chipotle peppers in adobo sauce">Chipotle peppers in adobo sauce (65 g)</option><option value="Dillweed">Dillweed (8 svgs)</option><option value="Honey">Honey</option><option value="Lemon juice &amp; zest">Lemon juice &amp; zest (1 )</option><option value="Pine nuts">Pine nuts (2 svgs)</option><option value="SWEET CREAMER">SWEET CREAMER (13 "QTY" = 2 BAGGIES THAT CONTAIN 63 mL EACH)</option></select>
+    <select id="mealSel" style="font-size:12px;padding:4px 7px;border:1px solid #ccc;border-radius:4px"><option value="">Select item to add…</option></select>
     <button class="primary sm" onclick="addToMealFromSel()">→ Move to meal bag</button>
   </div>
 </div>
 
-<div id="cats"><div class="section">
-      <div class="sec-head" onclick="toggleCat('Broths, Soups, Sauces &amp; Marinades')">
-        <span>Broths, Soups, Sauces &amp; Marinades</span><span class="arr">▼</span>
-      </div>
-      <table>
-  <colgroup><col style="width:33%"><col style="width:11%"><col style="width:22%"><col style="width:12%"><col style="width:22%"></colgroup>
-  <tbody><tr><th>Item</th><th>Bin</th><th>Qty</th><th>Unit</th><th></th></tr><tr>
-      <td>
-        <div class="item-name">Bone broth – nutritional yeast</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===1).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(1,-1)">−</button>
-          <span class="qty-val">1</span>
-          <button class="icon" onclick="adjMain(1,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(1)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(1)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Bone broth – crockpot</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===2).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(2,-1)">−</button>
-          <span class="qty-val">5</span>
-          <button class="icon" onclick="adjMain(2,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(2)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(2)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Cottage cheese / 4 oz for bone broth<span class="zero-tag">out</span></div>
-        <div class="item-note">Ingredient for nutritional yeast bone broth</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===3).bin=this.value;save()">
-          <option value="" selected="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(3,-1)">−</button>
-          <span class="qty-val">0</span>
-          <button class="icon" onclick="adjMain(3,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(3)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(3)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Yogurt / 4 oz for bone broth<span class="zero-tag">out</span></div>
-        <div class="item-note">Ingredient for nutritional yeast bone broth</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===4).bin=this.value;save()">
-          <option value="" selected="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(4,-1)">−</button>
-          <span class="qty-val">0</span>
-          <button class="icon" onclick="adjMain(4,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(4)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(4)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Cream cheese</div>
-        <div class="item-note">4-oz for next meat sauce recipe</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===5).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(5,-1)">−</button>
-          <span class="qty-val">1</span>
-          <button class="icon" onclick="adjMain(5,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">4-oz pkg</td>
-      <td>
-        <button class="sm" onclick="movToMeal(5)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(5)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Chicken noodle soup</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===6).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R" selected="">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(6,-1)">−</button>
-          <span class="qty-val">10</span>
-          <button class="icon" onclick="adjMain(6,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(6)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(6)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Chuck wagon stew</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===7).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(7,-1)">−</button>
-          <span class="qty-val">2</span>
-          <button class="icon" onclick="adjMain(7,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(7)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(7)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Meat sauce</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===8).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(8,-1)">−</button>
-          <span class="qty-val">18</span>
-          <button class="icon" onclick="adjMain(8,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(8)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(8)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Miso soup</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===9).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R" selected="">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(9,-1)">−</button>
-          <span class="qty-val">9</span>
-          <button class="icon" onclick="adjMain(9,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(9)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(9)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Enchilada sauce</div>
-        <div class="item-note">1 can Las Palmas = 5 svgs of 56.6g</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===10).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(10,-1)">−</button>
-          <span class="qty-val">5</span>
-          <button class="icon" onclick="adjMain(10,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(10)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(10)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Cherry chipotle salmon sauce</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===11).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(11,-1)">−</button>
-          <span class="qty-val">1</span>
-          <button class="icon" onclick="adjMain(11,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">recipe</td>
-      <td>
-        <button class="sm" onclick="movToMeal(11)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(11)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Chicken tortilla soup</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===12).bin=this.value;save()">
-          <option value="" selected="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(12,-1)">−</button>
-          <span class="qty-val">—</span>
-          <button class="icon" onclick="adjMain(12,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(12)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(12)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Chili stew</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===13).bin=this.value;save()">
-          <option value="" selected="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(13,-1)">−</button>
-          <span class="qty-val">—</span>
-          <button class="icon" onclick="adjMain(13,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(13)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(13)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Posole</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===14).bin=this.value;save()">
-          <option value="" selected="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(14,-1)">−</button>
-          <span class="qty-val">—</span>
-          <button class="icon" onclick="adjMain(14,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(14)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(14)">✎ Edit</button>
-      </td>
-    </tr></tbody></table>
-    </div><div class="section">
-      <div class="sec-head" onclick="toggleCat('Beef')">
-        <span>Beef</span><span class="arr">▼</span>
-      </div>
-      <table>
-  <colgroup><col style="width:33%"><col style="width:11%"><col style="width:22%"><col style="width:12%"><col style="width:22%"></colgroup>
-  <tbody><tr><th>Item</th><th>Bin</th><th>Qty</th><th>Unit</th><th></th></tr><tr>
-      <td>
-        <div class="item-name">Barbacoa</div>
-        <div class="item-note">6 svgs/pkg</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===15).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(15,-1)">−</button>
-          <span class="qty-val">2</span>
-          <button class="icon" onclick="adjMain(15,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(15)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(15)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Ground beef</div>
-        <div class="item-note">4-oz raw weight svgs</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===16).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(16,-1)">−</button>
-          <span class="qty-val">—</span>
-          <button class="icon" onclick="adjMain(16,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(16)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(16)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Beef stroganoff</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===17).bin=this.value;save()">
-          <option value="" selected="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(17,-1)">−</button>
-          <span class="qty-val">—</span>
-          <button class="icon" onclick="adjMain(17,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(17)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(17)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Chuck roast</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===18).bin=this.value;save()">
-          <option value="" selected="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(18,-1)">−</button>
-          <span class="qty-val">—</span>
-          <button class="icon" onclick="adjMain(18,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(18)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(18)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Steak</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===19).bin=this.value;save()">
-          <option value="" selected="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(19,-1)">−</button>
-          <span class="qty-val">—</span>
-          <button class="icon" onclick="adjMain(19,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(19)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(19)">✎ Edit</button>
-      </td>
-    </tr></tbody></table>
-    </div><div class="section">
-      <div class="sec-head" onclick="toggleCat('Pork')">
-        <span>Pork</span><span class="arr">▼</span>
-      </div>
-      <table>
-  <colgroup><col style="width:33%"><col style="width:11%"><col style="width:22%"><col style="width:12%"><col style="width:22%"></colgroup>
-  <tbody><tr><th>Item</th><th>Bin</th><th>Qty</th><th>Unit</th><th></th></tr><tr>
-      <td>
-        <div class="item-name">Carnitas<span class="meal-tag">1 in bag</span></div>
-        <div class="item-note">Ten 57g svgs/2 pkgs</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===20).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(20,-1)">−</button>
-          <span class="qty-val">0</span>
-          <button class="icon" onclick="adjMain(20,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(20)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(20)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Tamales<span class="meal-tag">1 in bag</span></div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===21).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(21,-1)">−</button>
-          <span class="qty-val">2</span>
-          <button class="icon" onclick="adjMain(21,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(21)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(21)">✎ Edit</button>
-      </td>
-    </tr></tbody></table>
-    </div><div class="section">
-      <div class="sec-head" onclick="toggleCat('Poultry')">
-        <span>Poultry</span><span class="arr">▼</span>
-      </div>
-      <table>
-  <colgroup><col style="width:33%"><col style="width:11%"><col style="width:22%"><col style="width:12%"><col style="width:22%"></colgroup>
-  <tbody><tr><th>Item</th><th>Bin</th><th>Qty</th><th>Unit</th><th></th></tr><tr>
-      <td>
-        <div class="item-name">Fried chicken</div>
-        <div class="item-note">94–103g/svg</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===22).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(22,-1)">−</button>
-          <span class="qty-val">7</span>
-          <button class="icon" onclick="adjMain(22,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(22)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(22)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Raw chicken breast</div>
-        
-        <div class="calc-box" style="margin-top:4px">
-          Raw g:<input type="number" style="width:60px;padding:2px 4px;border:1px solid #ccc;border-radius:3px;font-size:11px;margin:0 3px" oninput="calcInline(this)">→ <span class="calc-res" style="font-weight:500"></span> cooked 4-oz svgs
-        </div>
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===23).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(23,-1)">−</button>
-          <span class="qty-val">—</span>
-          <button class="icon" onclick="adjMain(23,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(23)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(23)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Shredded chicken<span class="meal-tag">1 in bag</span></div>
-        <div class="item-note">100g/svg</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===24).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(24,-1)">−</button>
-          <span class="qty-val">8</span>
-          <button class="icon" onclick="adjMain(24,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(24)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(24)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Ground chicken</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===25).bin=this.value;save()">
-          <option value="" selected="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(25,-1)">−</button>
-          <span class="qty-val">—</span>
-          <button class="icon" onclick="adjMain(25,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(25)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(25)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Ground turkey</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===26).bin=this.value;save()">
-          <option value="" selected="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(26,-1)">−</button>
-          <span class="qty-val">—</span>
-          <button class="icon" onclick="adjMain(26,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(26)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(26)">✎ Edit</button>
-      </td>
-    </tr></tbody></table>
-    </div><div class="section">
-      <div class="sec-head" onclick="toggleCat('Seafood')">
-        <span>Seafood</span><span class="arr">▼</span>
-      </div>
-      <table>
-  <colgroup><col style="width:33%"><col style="width:11%"><col style="width:22%"><col style="width:12%"><col style="width:22%"></colgroup>
-  <tbody><tr><th>Item</th><th>Bin</th><th>Qty</th><th>Unit</th><th></th></tr><tr>
-      <td>
-        <div class="item-name">Salmon filets (lbs)</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===27).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R" selected="">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(27,-1)">−</button>
-          <span class="qty-val">2</span>
-          <button class="icon" onclick="adjMain(27,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">lbs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(27)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(27)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Salmon, cooked 3-oz portions<span class="meal-tag">1 in bag</span></div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===28).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R" selected="">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(28,-1)">−</button>
-          <span class="qty-val">0</span>
-          <button class="icon" onclick="adjMain(28,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(28)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(28)">✎ Edit</button>
-      </td>
-    </tr></tbody></table>
-    </div><div class="section">
-      <div class="sec-head" onclick="toggleCat('Cheese')">
-        <span>Cheese</span><span class="arr">▼</span>
-      </div>
-      <table>
-  <colgroup><col style="width:33%"><col style="width:11%"><col style="width:22%"><col style="width:12%"><col style="width:22%"></colgroup>
-  <tbody><tr><th>Item</th><th>Bin</th><th>Qty</th><th>Unit</th><th></th></tr><tr>
-      <td>
-        <div class="item-name">Cheddar</div>
-        <div class="item-note">14g/svg (broth) or 20g/svg (quesadilla)</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===29).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(29,-1)">−</button>
-          <span class="qty-val">728</span>
-          <button class="icon" onclick="adjMain(29,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">g</td>
-      <td>
-        <button class="sm" onclick="movToMeal(29)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(29)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Gouda</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===30).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(30,-1)">−</button>
-          <span class="qty-val">—</span>
-          <button class="icon" onclick="adjMain(30,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">g</td>
-      <td>
-        <button class="sm" onclick="movToMeal(30)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(30)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Mozzarella</div>
-        <div class="item-note">40g/svg</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===31).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(31,-1)">−</button>
-          <span class="qty-val">—</span>
-          <button class="icon" onclick="adjMain(31,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">g</td>
-      <td>
-        <button class="sm" onclick="movToMeal(31)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(31)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Parmigiano Reggiano</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===32).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(32,-1)">−</button>
-          <span class="qty-val">—</span>
-          <button class="icon" onclick="adjMain(32,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">g</td>
-      <td>
-        <button class="sm" onclick="movToMeal(32)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(32)">✎ Edit</button>
-      </td>
-    </tr></tbody></table>
-    </div><div class="section">
-      <div class="sec-head" onclick="toggleCat('Dairy &amp; Milks')">
-        <span>Dairy &amp; Milks</span><span class="arr">▼</span>
-      </div>
-      <table>
-  <colgroup><col style="width:33%"><col style="width:11%"><col style="width:22%"><col style="width:12%"><col style="width:22%"></colgroup>
-  <tbody><tr><th>Item</th><th>Bin</th><th>Qty</th><th>Unit</th><th></th></tr><tr>
-      <td>
-        <div class="item-name">BUTTERMILK</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===33).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(33,-1)">−</button>
-          <span class="qty-val">20</span>
-          <button class="icon" onclick="adjMain(33,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">OZ</td>
-      <td>
-        <button class="sm" onclick="movToMeal(33)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(33)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">HEAVY CREAM</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===34).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(34,-1)">−</button>
-          <span class="qty-val">9</span>
-          <button class="icon" onclick="adjMain(34,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">TBSP</td>
-      <td>
-        <button class="sm" onclick="movToMeal(34)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(34)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">WHOLE MILK</div>
-        <div class="item-note">5 CUBES OF 100G/SVG</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===35).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(35,-1)">−</button>
-          <span class="qty-val">357</span>
-          <button class="icon" onclick="adjMain(35,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">G</td>
-      <td>
-        <button class="sm" onclick="movToMeal(35)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(35)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">MILK &amp; SWEET CREAMER</div>
-        <div class="item-note">3 CUBES OF 60G/SVG</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===36).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(36,-1)">−</button>
-          <span class="qty-val">540</span>
-          <button class="icon" onclick="adjMain(36,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">G</td>
-      <td>
-        <button class="sm" onclick="movToMeal(36)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(36)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">OAT MILK</div>
-        <div class="item-note">4 CUBES OF 80G/SVG</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===37).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(37,-1)">−</button>
-          <span class="qty-val">276</span>
-          <button class="icon" onclick="adjMain(37,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">G</td>
-      <td>
-        <button class="sm" onclick="movToMeal(37)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(37)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">OAT MILK &amp; SWEET CREAMER</div>
-        <div class="item-note">3 CUBES OF 60G/SVG</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===38).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(38,-1)">−</button>
-          <span class="qty-val">951</span>
-          <button class="icon" onclick="adjMain(38,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">G</td>
-      <td>
-        <button class="sm" onclick="movToMeal(38)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(38)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">SWEET CREAMER</div>
-        <div class="item-note">2 BAGGIES = 126 mL OR ENOUGH FOR 7 DAYS WORTH OF 7 mL EACH FOR CHAI TEA &amp; ICED COFFEE. NEXT TIME, FREEZE IN PORTIONS OF 14 DAYS WORTH IN 1 BAGGIE WHICH IS 196 mL</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===300).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(300,-1)">−</button>
-          <span class="qty-val">13</span>
-          <button class="icon" onclick="adjMain(300,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">"QTY" = 2 BAGGIES THAT CONTAIN 63 mL EACH</td>
-      <td>
-        <button class="sm" onclick="movToMeal(300)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(300)">✎ Edit</button>
-      </td>
-    </tr></tbody></table>
-    </div><div class="section">
-      <div class="sec-head" onclick="toggleCat('Grains &amp; Legumes')">
-        <span>Grains &amp; Legumes</span><span class="arr">▼</span>
-      </div>
-      <table>
-  <colgroup><col style="width:33%"><col style="width:11%"><col style="width:22%"><col style="width:12%"><col style="width:22%"></colgroup>
-  <tbody><tr><th>Item</th><th>Bin</th><th>Qty</th><th>Unit</th><th></th></tr><tr>
-      <td>
-        <div class="item-name">Black beans</div>
-        <div class="item-note">26g/svg</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===39).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R" selected="">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(39,-1)">−</button>
-          <span class="qty-val">5</span>
-          <button class="icon" onclick="adjMain(39,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(39)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(39)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Quinoa</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===40).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R" selected="">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(40,-1)">−</button>
-          <span class="qty-val">3</span>
-          <button class="icon" onclick="adjMain(40,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(40)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(40)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Refried beans</div>
-        <div class="item-note">13 svgs/pkg</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===41).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(41,-1)">−</button>
-          <span class="qty-val">14</span>
-          <button class="icon" onclick="adjMain(41,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(41)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(41)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Rice<span class="meal-tag">1 in bag</span></div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===42).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(42,-1)">−</button>
-          <span class="qty-val">4.5</span>
-          <button class="icon" onclick="adjMain(42,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(42)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(42)">✎ Edit</button>
-      </td>
-    </tr></tbody></table>
-    </div><div class="section">
-      <div class="sec-head" onclick="toggleCat('Bread &amp; Bakery')">
-        <span>Bread &amp; Bakery</span><span class="arr">▼</span>
-      </div>
-      <table>
-  <colgroup><col style="width:33%"><col style="width:11%"><col style="width:22%"><col style="width:12%"><col style="width:22%"></colgroup>
-  <tbody><tr><th>Item</th><th>Bin</th><th>Qty</th><th>Unit</th><th></th></tr><tr>
-      <td>
-        <div class="item-name">Bagels</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===43).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(43,-1)">−</button>
-          <span class="qty-val">—</span>
-          <button class="icon" onclick="adjMain(43,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666"></td>
-      <td>
-        <button class="sm" onclick="movToMeal(43)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(43)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Bread<span class="meal-tag">1 in bag</span></div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===44).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(44,-1)">−</button>
-          <span class="qty-val">5</span>
-          <button class="icon" onclick="adjMain(44,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">slices</td>
-      <td>
-        <button class="sm" onclick="movToMeal(44)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(44)">✎ Edit</button>
-      </td>
-    </tr></tbody></table>
-    </div><div class="section">
-      <div class="sec-head" onclick="toggleCat('Breakfast/Lunch Packs')">
-        <span>Breakfast/Lunch Packs</span><span class="arr">▼</span>
-      </div>
-      <table>
-  <colgroup><col style="width:33%"><col style="width:11%"><col style="width:22%"><col style="width:12%"><col style="width:22%"></colgroup>
-  <tbody><tr><th>Item</th><th>Bin</th><th>Qty</th><th>Unit</th><th></th></tr><tr>
-      <td>
-        <div class="item-name">Blueberries</div>
-        <div class="item-note">100g/svg</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===45).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T" selected="">Top</option>
-          <option value="L">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(45,-1)">−</button>
-          <span class="qty-val">19</span>
-          <button class="icon" onclick="adjMain(45,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(45)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(45)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Breakfast mushrooms (enoki/oyster)</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===46).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T" selected="">Top</option>
-          <option value="L">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(46,-1)">−</button>
-          <span class="qty-val">2</span>
-          <button class="icon" onclick="adjMain(46,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">4-day packs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(46)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(46)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Breakfast veggies</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===47).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T" selected="">Top</option>
-          <option value="L">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(47,-1)">−</button>
-          <span class="qty-val">3</span>
-          <button class="icon" onclick="adjMain(47,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">4-day packs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(47)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(47)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Daikon radish</div>
-        <div class="item-note">75g/pack</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===48).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T" selected="">Top</option>
-          <option value="L">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(48,-1)">−</button>
-          <span class="qty-val">2</span>
-          <button class="icon" onclick="adjMain(48,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">4-day packs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(48)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(48)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Garlic</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===49).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T" selected="">Top</option>
-          <option value="L">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(49,-1)">−</button>
-          <span class="qty-val">—</span>
-          <button class="icon" onclick="adjMain(49,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666"></td>
-      <td>
-        <button class="sm" onclick="movToMeal(49)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(49)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Ginger</div>
-        <div class="item-note">60g/pack</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===50).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T" selected="">Top</option>
-          <option value="L">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(50,-1)">−</button>
-          <span class="qty-val">2</span>
-          <button class="icon" onclick="adjMain(50,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">4-day packs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(50)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(50)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Lunch veggies</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===51).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T" selected="">Top</option>
-          <option value="L">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(51,-1)">−</button>
-          <span class="qty-val">3</span>
-          <button class="icon" onclick="adjMain(51,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">4-day packs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(51)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(51)">✎ Edit</button>
-      </td>
-    </tr></tbody></table>
-    </div><div class="section">
-      <div class="sec-head" onclick="toggleCat('Pizza / Quesadilla')">
-        <span>Pizza / Quesadilla</span><span class="arr">▼</span>
-      </div>
-      <table>
-  <colgroup><col style="width:33%"><col style="width:11%"><col style="width:22%"><col style="width:12%"><col style="width:22%"></colgroup>
-  <tbody><tr><th>Item</th><th>Bin</th><th>Qty</th><th>Unit</th><th></th></tr><tr>
-      <td>
-        <div class="item-name">Black olives</div>
-        <div class="item-note">1 can Lindsay Extra Large = 5 svgs of 30g</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===52).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R" selected="">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(52,-1)">−</button>
-          <span class="qty-val">8</span>
-          <button class="icon" onclick="adjMain(52,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(52)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(52)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Frozen pizza</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===53).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T" selected="">Top</option>
-          <option value="L">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(53,-1)">−</button>
-          <span class="qty-val">1</span>
-          <button class="icon" onclick="adjMain(53,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666"></td>
-      <td>
-        <button class="sm" onclick="movToMeal(53)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(53)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Mushrooms, baby bella</div>
-        <div class="item-note">34g/svg</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===54).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(54,-1)">−</button>
-          <span class="qty-val">9</span>
-          <button class="icon" onclick="adjMain(54,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(54)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(54)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Panko crumbs</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===55).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(55,-1)">−</button>
-          <span class="qty-val">—</span>
-          <button class="icon" onclick="adjMain(55,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666"></td>
-      <td>
-        <button class="sm" onclick="movToMeal(55)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(55)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Pepperoni</div>
-        <div class="item-note">25g/svg = 8 slices Gallo</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===56).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R" selected="">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(56,-1)">−</button>
-          <span class="qty-val">6</span>
-          <button class="icon" onclick="adjMain(56,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(56)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(56)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Pizza crust</div>
-        <div class="item-note">Golden Home Thin Crust</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===57).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R" selected="">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(57,-1)">−</button>
-          <span class="qty-val">2</span>
-          <button class="icon" onclick="adjMain(57,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666"></td>
-      <td>
-        <button class="sm" onclick="movToMeal(57)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(57)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Pizza sauce</div>
-        <div class="item-note">35g/svg</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===58).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R" selected="">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(58,-1)">−</button>
-          <span class="qty-val">6</span>
-          <button class="icon" onclick="adjMain(58,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(58)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(58)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Tortillas, large</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===59).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R" selected="">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(59,-1)">−</button>
-          <span class="qty-val">5</span>
-          <button class="icon" onclick="adjMain(59,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666"></td>
-      <td>
-        <button class="sm" onclick="movToMeal(59)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(59)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Tortillas, small</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===60).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R" selected="">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(60,-1)">−</button>
-          <span class="qty-val">1</span>
-          <button class="icon" onclick="adjMain(60,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666"></td>
-      <td>
-        <button class="sm" onclick="movToMeal(60)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(60)">✎ Edit</button>
-      </td>
-    </tr></tbody></table>
-    </div><div class="section">
-      <div class="sec-head" onclick="toggleCat('Condiments &amp; Misc')">
-        <span>Condiments &amp; Misc</span><span class="arr">▼</span>
-      </div>
-      <table>
-  <colgroup><col style="width:33%"><col style="width:11%"><col style="width:22%"><col style="width:12%"><col style="width:22%"></colgroup>
-  <tbody><tr><th>Item</th><th>Bin</th><th>Qty</th><th>Unit</th><th></th></tr><tr>
-      <td>
-        <div class="item-name">Chipotle peppers in adobo sauce</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===61).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L">Left</option>
-          <option value="R" selected="">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(61,-1)">−</button>
-          <span class="qty-val">65</span>
-          <button class="icon" onclick="adjMain(61,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">g</td>
-      <td>
-        <button class="sm" onclick="movToMeal(61)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(61)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Dillweed</div>
-        <div class="item-note">1/2-tbsp svgs</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===62).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(62,-1)">−</button>
-          <span class="qty-val">8</span>
-          <button class="icon" onclick="adjMain(62,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(62)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(62)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Honey</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===63).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(63,-1)">−</button>
-          <span class="qty-val">—</span>
-          <button class="icon" onclick="adjMain(63,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666"></td>
-      <td>
-        <button class="sm" onclick="movToMeal(63)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(63)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Lemon juice &amp; zest</div>
-        
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===64).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(64,-1)">−</button>
-          <span class="qty-val">1</span>
-          <button class="icon" onclick="adjMain(64,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666"></td>
-      <td>
-        <button class="sm" onclick="movToMeal(64)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(64)">✎ Edit</button>
-      </td>
-    </tr><tr>
-      <td>
-        <div class="item-name">Pine nuts</div>
-        <div class="item-note">14g/svg</div>
-        
-      </td>
-      <td>
-        <select class="bin-sel" onchange="items.find(x=&gt;x.id===65).bin=this.value;save()">
-          <option value="">—</option>
-          <option value="T">Top</option>
-          <option value="L" selected="">Left</option>
-          <option value="R">Right</option>
-        </select>
-      </td>
-      <td>
-        <div class="qty-wrap">
-          <button class="icon" onclick="adjMain(65,-1)">−</button>
-          <span class="qty-val">2</span>
-          <button class="icon" onclick="adjMain(65,1)">+</button>
-        </div>
-      </td>
-      <td style="font-size:11px;color:#666">svgs</td>
-      <td>
-        <button class="sm" onclick="movToMeal(65)" style="margin-bottom:2px">→ Meal</button>
-        <button class="sm" onclick="openEdit(65)">✎ Edit</button>
-      </td>
-    </tr></tbody></table>
-    </div></div>
+<!-- ADD SECTION BAR -->
+<div class="add-section-bar">
+  <input type="text" id="newSectionName" placeholder="New section name…">
+  <button class="primary" onclick="addSection()">+ Add Section</button>
+</div>
+
+<div id="cats"></div>
 
 <div class="backdrop" id="modal">
 <div class="modal">
-  <h3 id="mTitle">Edit: WHOLE MILK</h3>
+  <h3 id="mTitle">Add item</h3>
   <div class="fr"><label>Name</label><input id="mName"></div>
   <div class="fr"><label>Category</label>
-    <select id="mCat">
-      <option>Broths, Soups, Sauces &amp; Marinades</option>
-      <option>Beef</option>
-      <option>Pork</option>
-      <option>Poultry</option>
-      <option>Seafood</option>
-      <option>Cheese</option>
-      <option>Dairy &amp; Milks</option>
-      <option>Grains &amp; Legumes</option>
-      <option>Bread &amp; Bakery</option>
-      <option>Breakfast/Lunch Packs</option>
-      <option>Pizza / Quesadilla</option>
-      <option>Condiments &amp; Misc</option>
-    </select>
+    <select id="mCat"></select>
   </div>
   <div class="fr"><label>Bin</label>
     <select id="mBin">
@@ -2006,8 +152,9 @@ tr:hover td{background:#fafaf7}
 </div>
 
 <script>
-const CATS=["Broths, Soups, Sauces & Marinades","Beef","Pork","Poultry","Seafood","Cheese","Dairy & Milks","Grains & Legumes","Bread & Bakery","Breakfast/Lunch Packs","Pizza / Quesadilla","Condiments & Misc"];
 const STORE_KEY="freezer_v3";
+
+let defaultCats=["Broths, Soups, Sauces & Marinades","Beef","Pork","Poultry","Seafood","Cheese","Dairy & Milks","Grains & Legumes","Bread & Bakery","Produce","Pizza / Quesadilla","Condiments & Misc"];
 
 let defaultItems=[
   {id:1,name:"Bone broth – nutritional yeast",cat:"Broths, Soups, Sauces & Marinades",bin:"L",qty:1,unit:"svgs",note:""},
@@ -2036,31 +183,32 @@ let defaultItems=[
   {id:24,name:"Shredded chicken",cat:"Poultry",bin:"L",qty:8,unit:"svgs",note:"100g/svg"},
   {id:25,name:"Ground chicken",cat:"Poultry",bin:"",qty:null,unit:"svgs",note:""},
   {id:26,name:"Ground turkey",cat:"Poultry",bin:"",qty:null,unit:"svgs",note:""},
-  {id:27,name:"Salmon filets",cat:"Seafood",bin:"R",qty:2,unit:"lbs",note:""},
+  {id:27,name:"Salmon filets (lbs)",cat:"Seafood",bin:"R",qty:2,unit:"lbs",note:""},
   {id:28,name:"Salmon, cooked 3-oz portions",cat:"Seafood",bin:"R",qty:0,unit:"svgs",note:""},
   {id:29,name:"Cheddar",cat:"Cheese",bin:"L",qty:728,unit:"g",note:"14g/svg (broth) or 20g/svg (quesadilla)"},
   {id:30,name:"Gouda",cat:"Cheese",bin:"L",qty:null,unit:"g",note:""},
   {id:31,name:"Mozzarella",cat:"Cheese",bin:"L",qty:null,unit:"g",note:"40g/svg"},
   {id:32,name:"Parmigiano Reggiano",cat:"Cheese",bin:"L",qty:null,unit:"g",note:""},
-  {id:33,name:"Buttermilk",cat:"Dairy & Milks",bin:"L",qty:20,unit:"oz",note:""},
-  {id:34,name:"Heavy cream",cat:"Dairy & Milks",bin:"T",qty:9,unit:"svgs (tbsp)",note:""},
-  {id:35,name:"Milk – plain",cat:"Dairy & Milks",bin:"T",qty:257,unit:"g",note:"100g/svg ≈ 2.5 svgs"},
-  {id:36,name:"Milk – vanilla creamer",cat:"Dairy & Milks",bin:"T",qty:0,unit:"g",note:"60g/svg"},
-  {id:37,name:"Oat milk – plain",cat:"Dairy & Milks",bin:"T",qty:276,unit:"g",note:"80g/svg ≈ 3.4 svgs"},
-  {id:38,name:"Oat milk – vanilla creamer",cat:"Dairy & Milks",bin:"T",qty:351,unit:"g",note:"60g/svg ≈ 5.8 svgs"},
+  {id:33,name:"BUTTERMILK",cat:"Dairy & Milks",bin:"L",qty:20,unit:"OZ",note:""},
+  {id:34,name:"HEAVY CREAM",cat:"Dairy & Milks",bin:"L",qty:9,unit:"TBSP",note:""},
+  {id:35,name:"WHOLE MILK",cat:"Dairy & Milks",bin:"L",qty:357,unit:"G",note:"5 CUBES OF 100G/SVG"},
+  {id:36,name:"MILK & SWEET CREAMER",cat:"Dairy & Milks",bin:"L",qty:540,unit:"G",note:"3 CUBES OF 60G/SVG"},
+  {id:37,name:"OAT MILK",cat:"Dairy & Milks",bin:"L",qty:276,unit:"G",note:"4 CUBES OF 80G/SVG"},
+  {id:38,name:"OAT MILK & SWEET CREAMER",cat:"Dairy & Milks",bin:"L",qty:951,unit:"G",note:"3 CUBES OF 60G/SVG"},
+  {id:300,name:"SWEET CREAMER",cat:"Dairy & Milks",bin:"L",qty:13,unit:"QTY",note:"2 BAGGIES = 126 mL OR ENOUGH FOR 7 DAYS WORTH"},
   {id:39,name:"Black beans",cat:"Grains & Legumes",bin:"R",qty:5,unit:"svgs",note:"26g/svg"},
   {id:40,name:"Quinoa",cat:"Grains & Legumes",bin:"R",qty:3,unit:"svgs",note:""},
   {id:41,name:"Refried beans",cat:"Grains & Legumes",bin:"L",qty:14,unit:"svgs",note:"13 svgs/pkg"},
-  {id:42,name:"Rice",cat:"Grains & Legumes",bin:"L",qty:3.5,unit:"svgs",note:""},
+  {id:42,name:"Rice",cat:"Grains & Legumes",bin:"L",qty:4.5,unit:"svgs",note:""},
   {id:43,name:"Bagels",cat:"Bread & Bakery",bin:"L",qty:null,unit:"",note:""},
   {id:44,name:"Bread",cat:"Bread & Bakery",bin:"L",qty:5,unit:"slices",note:""},
-  {id:45,name:"Blueberries",cat:"Breakfast/Lunch Packs",bin:"T",qty:19,unit:"svgs",note:"100g/svg"},
-  {id:46,name:"Breakfast mushrooms (enoki/oyster)",cat:"Breakfast/Lunch Packs",bin:"T",qty:2,unit:"4-day packs",note:""},
-  {id:47,name:"Breakfast veggies",cat:"Breakfast/Lunch Packs",bin:"T",qty:3,unit:"4-day packs",note:""},
-  {id:48,name:"Daikon radish",cat:"Breakfast/Lunch Packs",bin:"T",qty:2,unit:"4-day packs",note:"75g/pack"},
-  {id:49,name:"Garlic",cat:"Breakfast/Lunch Packs",bin:"T",qty:null,unit:"",note:""},
-  {id:50,name:"Ginger",cat:"Breakfast/Lunch Packs",bin:"T",qty:2,unit:"4-day packs",note:"60g/pack"},
-  {id:51,name:"Lunch veggies",cat:"Breakfast/Lunch Packs",bin:"T",qty:3,unit:"4-day packs",note:""},
+  {id:45,name:"Blueberries",cat:"Produce",bin:"T",qty:19,unit:"svgs",note:"100g/svg"},
+  {id:46,name:"Breakfast mushrooms (enoki/oyster)",cat:"Produce",bin:"T",qty:2,unit:"4-day packs",note:""},
+  {id:47,name:"Breakfast veggies",cat:"Produce",bin:"T",qty:3,unit:"4-day packs",note:""},
+  {id:48,name:"Daikon radish",cat:"Produce",bin:"T",qty:2,unit:"4-day packs",note:"75g/pack"},
+  {id:49,name:"Garlic",cat:"Produce",bin:"T",qty:null,unit:"",note:""},
+  {id:50,name:"Ginger",cat:"Produce",bin:"T",qty:2,unit:"4-day packs",note:"60g/pack"},
+  {id:51,name:"Lunch veggies",cat:"Produce",bin:"T",qty:3,unit:"4-day packs",note:""},
   {id:52,name:"Black olives",cat:"Pizza / Quesadilla",bin:"R",qty:8,unit:"svgs",note:"1 can Lindsay Extra Large = 5 svgs of 30g"},
   {id:53,name:"Frozen pizza",cat:"Pizza / Quesadilla",bin:"T",qty:1,unit:"",note:""},
   {id:54,name:"Mushrooms, baby bella",cat:"Pizza / Quesadilla",bin:"L",qty:9,unit:"svgs",note:"34g/svg"},
@@ -2082,11 +230,11 @@ let defaultMeal=[
   {id:2,name:"Bread",qty:1,unit:"slices"},
   {id:3,name:"Shredded chicken",qty:1,unit:"svgs"},
   {id:4,name:"Tamales",qty:1,unit:"svgs"},
-  {id:5,name:"Salmon, cooked 3-oz portions",qty:3,unit:"svgs"},
-  {id:6,name:"Rice",qty:3,unit:"svgs"},
+  {id:5,name:"Salmon, cooked 3-oz portions",qty:1,unit:"svgs"},
+  {id:6,name:"Rice",qty:1,unit:"svgs"},
 ];
 
-let items, meal, mealLoc, collapsed, undoStack, nid, nmid;
+let items, meal, mealLoc, collapsed, undoStack, nid, nmid, cats;
 
 function loadState(){
   try{
@@ -2097,8 +245,9 @@ function loadState(){
       meal=d.meal||defaultMeal;
       mealLoc=d.mealLoc||"Right bin";
       collapsed=d.collapsed||{};
-      nid=d.nid||300;
+      nid=d.nid||400;
       nmid=d.nmid||50;
+      cats=d.cats||defaultCats;
     } else {
       resetDefaults();
     }
@@ -2111,49 +260,98 @@ function resetDefaults(){
   meal=JSON.parse(JSON.stringify(defaultMeal));
   mealLoc="Right bin";
   collapsed={};
-  nid=300;nmid=50;
+  nid=400;nmid=50;
+  cats=JSON.parse(JSON.stringify(defaultCats));
 }
 
 function save(){
   try{
-    localStorage.setItem(STORE_KEY,JSON.stringify({items,meal,mealLoc,collapsed,nid,nmid}));
+    localStorage.setItem(STORE_KEY,JSON.stringify({items,meal,mealLoc,collapsed,nid,nmid,cats}));
     const ind=document.getElementById("saveInd");
     ind.textContent="✓ Saved";
     setTimeout(()=>ind.textContent="",1800);
   }catch(e){}
 }
 
-function fmt(qty,unit){
-  if(qty===null||qty===undefined) return "—";
-  return qty+(unit?" "+unit:"");
+function populateCatSelect(){
+  const sel=document.getElementById("mCat");
+  const cur=sel.value;
+  sel.innerHTML="";
+  cats.forEach(c=>{
+    const o=document.createElement("option");
+    o.value=c;o.textContent=c;
+    if(c===cur) o.selected=true;
+    sel.appendChild(o);
+  });
+}
+
+function addSection(){
+  const inp=document.getElementById("newSectionName");
+  const name=inp.value.trim();
+  if(!name){alert("Enter a section name.");return;}
+  if(cats.includes(name)){alert("Section already exists.");return;}
+  cats.push(name);
+  inp.value="";
+  save();render();
+}
+
+function renameSection(oldName){
+  const newName=prompt("Rename section:",oldName);
+  if(!newName||newName.trim()===oldName) return;
+  const n=newName.trim();
+  if(cats.includes(n)){alert("That name already exists.");return;}
+  cats=cats.map(c=>c===oldName?n:c);
+  items=items.map(i=>i.cat===oldName?{...i,cat:n}:i);
+  if(collapsed[oldName]){collapsed[n]=collapsed[oldName];delete collapsed[oldName];}
+  save();render();
+}
+
+function deleteSection(name){
+  const count=items.filter(i=>i.cat===name).length;
+  if(count>0){
+    if(!confirm(`Delete section "${name}"? It has ${count} item(s). They will be moved to the first section.`)) return;
+    const firstCat=cats.find(c=>c!==name)||"Uncategorized";
+    items=items.map(i=>i.cat===name?{...i,cat:firstCat}:i);
+  } else {
+    if(!confirm(`Delete empty section "${name}"?`)) return;
+  }
+  cats=cats.filter(c=>c!==name);
+  delete collapsed[name];
+  save();render();
 }
 
 function render(){
-  renderMeal();
+  populateCatSelect();
   populateMealSel();
+  renderMeal();
   const q=document.getElementById("srch").value.toLowerCase();
   const bf=document.getElementById("binF").value;
   let html="";
-  CATS.forEach(cat=>{
+  cats.forEach(cat=>{
     let rows=items.filter(i=>{
       if(i.cat!==cat) return false;
       if(q&&!i.name.toLowerCase().includes(q)&&!(i.note||"").toLowerCase().includes(q)) return false;
       if(bf&&i.bin!==bf) return false;
       return true;
     });
-    if(!rows.length) return;
+    if(q&&!rows.length) return;
     const col=collapsed[cat];
+    const esc=cat.replace(/'/g,"\\'").replace(/"/g,"&quot;");
     html+=`<div class="section">
-      <div class="sec-head" onclick="toggleCat('${cat.replace(/'/g,"\\'")}')">
-        <span>${cat}</span><span class="arr">${col?"▶":"▼"}</span>
+      <div class="sec-head">
+        <span class="sec-toggle" onclick="toggleCat('${esc}')">${cat} <span class="arr">${col?"▶":"▼"}</span></span>
+        <div class="sec-head-btns">
+          <button class="sec-head-btn" onclick="renameSection('${esc}')">✎ Rename</button>
+          <button class="sec-head-btn del" onclick="deleteSection('${esc}')">✕ Delete</button>
+        </div>
       </div>
-      ${col?"":renderTable(rows)}
+      ${col?"":renderTable(rows,cat)}
     </div>`;
   });
   document.getElementById("cats").innerHTML=html;
 }
 
-function renderTable(rows){
+function renderTable(rows,cat){
   let t=`<table>
   <colgroup><col style="width:33%"><col style="width:11%"><col style="width:22%"><col style="width:12%"><col style="width:22%"></colgroup>
   <tr><th>Item</th><th>Bin</th><th>Qty</th><th>Unit</th><th></th></tr>`;
@@ -2193,6 +391,10 @@ function renderTable(rows){
       </td>
     </tr>`;
   });
+  // Add item directly to this section
+  t+=`<tr><td colspan="5" style="padding:6px">
+    <button class="sm primary" onclick="openAddToSection('${cat.replace(/'/g,"\\'")}')">+ Add item to this section</button>
+  </td></tr>`;
   t+="</table>";
   return t;
 }
@@ -2220,7 +422,6 @@ function movToMeal(id){
   if(isNaN(amt)||amt<=0) return;
   if(amt>max){alert("Not enough in main.");return;}
   it.qty=parseFloat((it.qty-amt).toFixed(2));
-  // check if already in meal bag
   const existing=meal.find(m=>m.name===it.name);
   if(existing) existing.qty=parseFloat((existing.qty+amt).toFixed(2));
   else meal.push({id:nmid++,name:it.name,qty:amt,unit:it.unit||"svgs"});
@@ -2278,7 +479,7 @@ function mealClear(mid){
 }
 
 function clearMealBag(){
-  if(!confirm("Clear entire meal bag? This will NOT put items back to main (assumes all were eaten or handled).")) return;
+  if(!confirm("Clear entire meal bag? This will NOT put items back to main.")) return;
   undoStack.push({type:"clearAll",snap:JSON.parse(JSON.stringify(meal))});
   meal=[];
   save();render();showUndo();
@@ -2347,11 +548,15 @@ function editMealLoc(){
 function toggleCat(cat){collapsed[cat]=!collapsed[cat];save();render();}
 
 let editId=null;
+let preselectCat=null;
+
 function openAdd(){
   editId=null;
   document.getElementById("mTitle").textContent="Add item";
+  populateCatSelect();
   document.getElementById("mName").value="";
-  document.getElementById("mCat").value=CATS[0];
+  if(preselectCat) document.getElementById("mCat").value=preselectCat;
+  preselectCat=null;
   document.getElementById("mBin").value="";
   document.getElementById("mQty").value="";
   document.getElementById("mUnit").value="svgs";
@@ -2360,11 +565,17 @@ function openAdd(){
   document.getElementById("modal").classList.add("open");
 }
 
+function openAddToSection(cat){
+  preselectCat=cat;
+  openAdd();
+}
+
 function openEdit(id){
   editId=id;
   const it=items.find(x=>x.id===id);
   if(!it) return;
   document.getElementById("mTitle").textContent="Edit: "+it.name;
+  populateCatSelect();
   document.getElementById("mName").value=it.name;
   document.getElementById("mCat").value=it.cat;
   document.getElementById("mBin").value=it.bin||"";
@@ -2405,60 +616,50 @@ function calcCooked(){
 
 function dl(){
   const state=localStorage.getItem(STORE_KEY)||"{}";
-  const src=document.documentElement.outerHTML
-    .replace("resetDefaults();","// state loaded from backup\ntry{const d="+state+";items=d.items;meal=d.meal;mealLoc=d.mealLoc;collapsed=d.collapsed;nid=d.nid;nmid=d.nmid;}catch(e){resetDefaults();}//");
+  const blob=new Blob([document.documentElement.outerHTML],{type:"text/html"});
   const a=document.createElement("a");
-  a.href=URL.createObjectURL(new Blob([src],{type:"text/html"}));
-  a.download="freezer_inventory.html";a.click();
+  a.href=URL.createObjectURL(blob);
+  a.download="freezer_inventory_backup.html";a.click();
 }
-
 
 // JSONBIN SYNC
-var JBIN_URL = "https://api.jsonbin.io/v3/b/69cc9d32aaba882197b2c2bc";
-var JBIN_KEY = "$2a$10$tpjsSaIqmjzoWXjpvpu7n.AdJJdQf8JUbDhBDfNoCC5rzN0vxDh/m";
+var JBIN_URL="https://api.jsonbin.io/v3/b/69cc9d32aaba882197b2c2bc";
+var JBIN_KEY="$2a$10$tpjsSaIqmjzoWXjpvpu7n.AdJJdQf8JUbDhBDfNoCC5rzN0vxDh/m";
 
-function setSyncStatus(msg, cls) {
-  var el = document.getElementById('sync-status');
-  if(el) { el.textContent = msg; el.style.color = cls==='sync-ok'?'#2e7d32':cls==='sync-err'?'#c04a2a':'#b07d20'; }
+function setSyncStatus(msg,cls){
+  var el=document.getElementById('sync-status');
+  if(el){el.textContent=msg;el.style.color=cls==='sync-ok'?'#2e7d32':cls==='sync-err'?'#c04a2a':'#b07d20';}
 }
 
-function pushToGoogle() {
-  var state = {items:items, meal:meal, mealLoc:mealLoc, collapsed:collapsed, nid:nid, nmid:nmid};
-  setSyncStatus('Saving...', 'sync-pending');
-  fetch(JBIN_URL, {
-    method: 'PUT',
-    headers: {'Content-Type':'application/json','X-Master-Key':JBIN_KEY,'X-Bin-Versioning':'false'},
-    body: JSON.stringify(state)
-  })
-  .then(function(r){ return r.json(); })
-  .then(function(){ setSyncStatus('Saved ' + new Date().toLocaleTimeString(), 'sync-ok'); })
-  .catch(function(){ setSyncStatus('Save failed', 'sync-err'); });
+function pushToGoogle(){
+  var state={items,meal,mealLoc,collapsed,nid,nmid,cats};
+  setSyncStatus('Saving...','sync-pending');
+  fetch(JBIN_URL,{method:'PUT',headers:{'Content-Type':'application/json','X-Master-Key':JBIN_KEY,'X-Bin-Versioning':'false'},body:JSON.stringify(state)})
+  .then(r=>r.json())
+  .then(()=>setSyncStatus('Saved '+new Date().toLocaleTimeString(),'sync-ok'))
+  .catch(()=>setSyncStatus('Save failed','sync-err'));
 }
 
-function pullFromGoogle() {
-  setSyncStatus('Loading...', 'sync-pending');
-  fetch(JBIN_URL + '/latest', {
-    method: 'GET',
-    headers: {'X-Master-Key':JBIN_KEY}
-  })
-  .then(function(r){ return r.json(); })
-  .then(function(resp){
-    var d = resp.record;
-    if(d && d.items){
-      items=d.items; meal=d.meal||defaultMeal; mealLoc=d.mealLoc||'Right bin';
-      collapsed=d.collapsed||{}; nid=d.nid||300; nmid=d.nmid||50;
-      save(); render();
-      setSyncStatus('Loaded ' + new Date().toLocaleTimeString(), 'sync-ok');
+function pullFromGoogle(){
+  setSyncStatus('Loading...','sync-pending');
+  fetch(JBIN_URL+'/latest',{method:'GET',headers:{'X-Master-Key':JBIN_KEY}})
+  .then(r=>r.json())
+  .then(resp=>{
+    var d=resp.record;
+    if(d&&d.items){
+      items=d.items;meal=d.meal||defaultMeal;mealLoc=d.mealLoc||'Right bin';
+      collapsed=d.collapsed||{};nid=d.nid||400;nmid=d.nmid||50;
+      cats=d.cats||defaultCats;
+      save();render();
+      setSyncStatus('Loaded '+new Date().toLocaleTimeString(),'sync-ok');
     } else {
-      setSyncStatus('Nothing saved yet', 'sync-err');
+      setSyncStatus('Nothing saved yet','sync-err');
     }
   })
-  .catch(function(){ setSyncStatus('Could not connect', 'sync-err'); });
+  .catch(()=>setSyncStatus('Could not connect','sync-err'));
 }
 
 document.getElementById("modal").addEventListener("click",function(e){if(e.target===this)closeModal();});
 loadState();render();
 </script>
-
-
 </body></html>
